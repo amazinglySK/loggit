@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Logarithms explained</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <ol>
+        <li><a href="./index.html">Getting Started</a></li>
+        <li><a href="./why_log.html">Why logs ?</a></li>
+        <li><a href="./basics.html">Basics of log</a></li>
+        <li><a href="./identities.html">The identities</a></li>
+        <li><a href="./getting_log_values.html">Getting the log values</a></li>
+        <li><a href="./workarounds.html">A few workarounds</a></li>
+        <li><a href="./operation.html">Operating with them</a></li>
+        <li><a href="./antilog.html">Antilogs</a></li>
+        <li>
+          <a href="./getting_antilog_values.html">Getting the antilog values</a>
+        </li>
+        <li>
+          <a href="./addition.html">One tiny addition (and subtraction)</a>
+        </li>
+        <li><a href="./conclusion.html">Conclusion</a></li>
+      </ol>
+    </div>
+    <div class="container">
+      <header>
+        <i class="fa-solid fa-bars" id="sidebar_btn"></i>
+        <h3 class="title">Logarithms Explained</h3>
+        <div class="links-container">
+          <i class="fa-solid fa-print"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </header>
+      <main>
+        <div class="content">
+          <h1>Getting the log values</h1>
+          <div class="text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+              delectus eos labore fuga impedit vel unde non at perspiciatis
+              nostrum. Debitis facere eius optio tenetur ea quidem quam amet
+              perspiciatis!
+            </p>
+            <p>To get the logarithm of a value say 42.333:</p>
+            <ol>
+              <li>
+                Count the number of digits before that and subtract one. This is
+                your characteristic. So, in the example it would be 1.
+              </li>
+              <li>
+                Now omit the decimal point for a moment in your mind. Take the
+                first four digits and write it in rough. [4233]
+              </li>
+              <li>
+                Now head to the log table and check for the first two digit on
+                the left-most column.
+              </li>
+              <li>
+                Once you find the correct row, check for the third digit in the
+                first row.
+              </li>
+              <li>
+                See the cell which belongs to this row and column. Jot down that
+                number. [6263]
+              </li>
+              <li>
+                Now in case there is a fourth digit (as is in our example), head
+                over the last 9 columns of the table. Locate the digit it the
+                top row. Find the number that falls in the same row (the place
+                where the two digit fell) and column. [3]
+              </li>
+              <li>
+                Add the number to the 4 digits obtained in step 5. [6263 + 3 =
+                6266]
+              </li>
+              <li>
+                Put a decimal point and write down the final result obtained in
+                line 7. Before the decimal point write the characteristic
+                obtained in step 1. [1.6266]
+              </li>
+            </ol>
+            <p>Voila ! You have successfully used the log tables !</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

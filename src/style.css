@@ -1,0 +1,110 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --accent-color: #ee6352;
+  --text-color: #393e41;
+  --bg-color: #f1f7ed;
+  --light-bg-color: #e8eddf;
+  --links-color: #989fce;
+}
+
+html {
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--bg-color);
+}
+
+.sidebar {
+  font-size: 1rem;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 2rem;
+  background-color: var(--light-bg-color);
+}
+
+.sidebar a {
+  font-weight: 500;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: var(--links-color);
+}
+
+.container {
+  margin-left: 300px;
+  margin-bottom: 5rem;
+}
+
+header {
+  font-size: 1.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 2rem;
+}
+
+header > h3 {
+  font-size: 2.4rem;
+  white-space: nowrap;
+  font-weight: 250;
+}
+
+li {
+  line-height: 1.5rem;
+}
+
+.links-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.content {
+  width: 70%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin: auto;
+}
+
+.pointer-container {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.fa-angle-right,
+.fa-angle-left {
+  padding: 10px 20px;
+}
+
+.fa-angle-right:hover,
+.fa-angle-left:hover {
+  background-color: var(--light-bg-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.text {
+  font-size: 1.5rem;
+  line-height: 1.45em;
+}
