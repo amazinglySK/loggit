@@ -34,9 +34,13 @@ html {
 }
 
 .sidebar a {
-  font-weight: 500;
+  font-weight: 700;
   color: var(--text-color);
   text-decoration: none;
+}
+
+.sidebar ol {
+  padding-left: 1rem;
 }
 
 .sidebar a:hover {
@@ -95,7 +99,7 @@ li {
 }
 
 .pointer-container {
-  font-size: 3rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -103,15 +107,15 @@ li {
   margin: 2rem auto;
 }
 
-.fa-angle-right,
-.fa-angle-left {
-  color: initial;
+.fa-forward,
+.fa-backward {
+  color: var(--accent-color);
   padding: 10px 20px;
   border-radius: 10px;
 }
 
-.fa-angle-right:hover,
-.fa-angle-left:hover {
+.fa-forward:hover,
+.fa-backward:hover {
   background-color: var(--light-bg-color);
 }
 
