@@ -18,10 +18,29 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <!-- Katex  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+      integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+      integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+      integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
+      crossorigin="anonymous"
+    ></script>
     <title>Logarithms explained</title>
   </head>
   <body>
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
       <ol>
         <li><a href="./index.html">Getting Started</a></li>
         <li><a href="./why_log.html">Why logs ?</a></li>
@@ -40,13 +59,17 @@
         <li><a href="./conclusion.html">Conclusion</a></li>
       </ol>
     </div>
-    <div class="container">
+    <div class="container" id="container">
       <header>
-        <i class="fa-solid fa-bars" id="sidebar_btn"></i>
+        <i class="fa-solid fa-bars" id="sidebar_btn" onclick="moveNav()"></i>
         <h3 class="title">Logarithms Explained</h3>
         <div class="links-container">
-          <i class="fa-solid fa-print"></i>
-          <i class="fa-brands fa-github"></i>
+          <a target="_blank" href="./public/book_pdf.pdf"
+            ><i class="fa-solid fa-print"></i
+          ></a>
+          <a target="_blank" href="https://github.com/amazinglySK/loggit"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
       </header>
       <main>
@@ -59,20 +82,36 @@
               you need to convert back into the decimal system. Mathematically
               antilog look like this :
             </p>
-            <p>
-              <span class="math inline"
-                ><em>a</em><em>n</em><em>t</em><em>i</em><em>l</em><em>o</em
-                ><em>g</em><sub><em>b</em></sub
-                >(<em>x</em>) = <em>b</em><sup><em>x</em></sup></span
-              >
-            </p>
+            <p>$antilog_{b}(x)= b^x$</p>
             <p>
               Now that was easy. Let’s move on to locating antilogs in the
               second half of that long document with you.
             </p>
           </div>
         </div>
+        <div class="pointer-container">
+          <a href="./operation.html"><i class="fa-solid fa-angle-left"></i></a>
+          <a href="./getting_antilog_values.html"
+            ><i class="fa-solid fa-angle-right"></i
+          ></a>
+        </div>
       </main>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "$", right: "$", display: true },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "\\[", right: "\\]", display: true },
+          ],
+          throwOnError: false,
+        });
+      });
+    </script>
+    <script src="./app.js"></script>
   </body>
 </html>

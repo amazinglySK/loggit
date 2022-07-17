@@ -44,6 +44,7 @@ html {
 }
 
 .container {
+  transition: 0.5s;
   margin-left: 300px;
   margin-bottom: 5rem;
 }
@@ -58,7 +59,12 @@ header {
   margin-bottom: 2rem;
 }
 
+header a {
+  color: inherit;
+}
+
 header > h3 {
+  color: var(--accent-color);
   font-size: 2.4rem;
   white-space: nowrap;
   font-weight: 250;
@@ -66,6 +72,13 @@ header > h3 {
 
 li {
   line-height: 1.5rem;
+}
+
+.content li {
+  line-height: 1.5em;
+}
+.content ol {
+  margin: 1rem 0;
 }
 
 .links-container {
@@ -92,7 +105,9 @@ li {
 
 .fa-angle-right,
 .fa-angle-left {
+  color: initial;
   padding: 10px 20px;
+  border-radius: 10px;
 }
 
 .fa-angle-right:hover,
@@ -101,6 +116,7 @@ li {
 }
 
 h1 {
+  color: var(--accent-color);
   font-size: 2.5rem;
 }
 

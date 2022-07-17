@@ -21,7 +21,7 @@
     <title>Logarithms explained</title>
   </head>
   <body>
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
       <ol>
         <li><a href="./index.html">Getting Started</a></li>
         <li><a href="./why_log.html">Why logs ?</a></li>
@@ -40,13 +40,17 @@
         <li><a href="./conclusion.html">Conclusion</a></li>
       </ol>
     </div>
-    <div class="container">
+    <div class="container" id="container">
       <header>
-        <i class="fa-solid fa-bars" id="sidebar_btn"></i>
+        <i class="fa-solid fa-bars" id="sidebar_btn" onclick="moveNav()"></i>
         <h3 class="title">Logarithms Explained</h3>
         <div class="links-container">
-          <i class="fa-solid fa-print"></i>
-          <i class="fa-brands fa-github"></i>
+          <a target="_blank" href="./public/book_pdf.pdf"
+            ><i class="fa-solid fa-print"></i
+          ></a>
+          <a target="_blank" href="https://github.com/amazinglySK/loggit"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
       </header>
       <main>
@@ -80,7 +84,14 @@
             </p>
           </div>
         </div>
+        <div class="pointer-container">
+          <a href="./workarounds.html"
+            ><i class="fa-solid fa-angle-left"></i
+          ></a>
+          <a href="./antilog.html"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
       </main>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>

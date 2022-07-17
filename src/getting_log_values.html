@@ -21,7 +21,7 @@
     <title>Logarithms explained</title>
   </head>
   <body>
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
       <ol>
         <li><a href="./index.html">Getting Started</a></li>
         <li><a href="./why_log.html">Why logs ?</a></li>
@@ -40,13 +40,17 @@
         <li><a href="./conclusion.html">Conclusion</a></li>
       </ol>
     </div>
-    <div class="container">
+    <div class="container" id="container">
       <header>
-        <i class="fa-solid fa-bars" id="sidebar_btn"></i>
+        <i class="fa-solid fa-bars" id="sidebar_btn" onclick="moveNav()"></i>
         <h3 class="title">Logarithms Explained</h3>
         <div class="links-container">
-          <i class="fa-solid fa-print"></i>
-          <i class="fa-brands fa-github"></i>
+          <a target="_blank" href="./public/book_pdf.pdf"
+            ><i class="fa-solid fa-print"></i
+          ></a>
+          <a target="_blank" href="https://github.com/amazinglySK/loggit"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
       </header>
       <main>
@@ -54,10 +58,13 @@
           <h1>Getting the log values</h1>
           <div class="text">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-              delectus eos labore fuga impedit vel unde non at perspiciatis
-              nostrum. Debitis facere eius optio tenetur ea quidem quam amet
-              perspiciatis!
+              Now that you’ve seen the identities, let’s try making use of that
+              weird matrix of numbers. Keep a copy of the
+              <a
+                href="https://toaz.info/viewer/web/viewer.html?file=https%3A%2F%2Ftoaz.info%2Fdocdownloadv2-log-and-antilog-tables-pr_c7378800119dfcee950577294fcc0bb7%3Fdata_code%3Ddcda06240b4bca671c5fa8065388176e#zoom=auto"
+                >table</a
+              >
+              beside you so that you can follow along.
             </p>
             <p>To get the logarithm of a value say 42.333:</p>
             <ol>
@@ -100,7 +107,14 @@
             <p>Voila ! You have successfully used the log tables !</p>
           </div>
         </div>
+        <div class="pointer-container">
+          <a href="./identities.html"><i class="fa-solid fa-angle-left"></i></a>
+          <a href="./workarounds.html"
+            ><i class="fa-solid fa-angle-right"></i
+          ></a>
+        </div>
       </main>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
