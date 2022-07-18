@@ -1,104 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Katex  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
-      integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC"
-      crossorigin="anonymous"
-    />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
-      integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
-      integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
-      crossorigin="anonymous"
-      onload="renderMathInElement(document.body);"
-    ></script>
-    <link rel="stylesheet" href="./style.css" />
-    <title>Logarithms explained</title>
-  </head>
-  <body>
-    <div class="sidebar" id="sidebar">
-      <ol>
-        <li><a href="./index.html">Getting Started</a></li>
-        <li><a href="./why_log.html">Why logs ?</a></li>
-        <li><a href="./basics.html">Basics of log</a></li>
-        <li><a href="./identities.html">The identities</a></li>
-        <li><a href="./getting_log_values.html">Getting the log values</a></li>
-        <li><a href="./workarounds.html">A few workarounds</a></li>
-        <li><a href="./operation.html">Operating with them</a></li>
-        <li><a href="./antilog.html">Antilogs</a></li>
-        <li>
-          <a href="./getting_antilog_values.html">Getting the antilog values</a>
-        </li>
-        <li>
-          <a href="./addition.html">One tiny addition (and subtraction)</a>
-        </li>
-        <li><a href="./conclusion.html">Conclusion</a></li>
-      </ol>
-    </div>
-    <div class="container" id="container">
-      <header>
-        <i class="fa-solid fa-bars" id="sidebar_btn" onclick="moveNav()"></i>
-        <h3 class="title">Logarithms Explained</h3>
-        <div class="links-container">
-          <a target="_blank" href="./public/book_pdf.pdf"
-            ><i class="fa-solid fa-print"></i
-          ></a>
-          <a target="_blank" href="https://github.com/amazinglySK/loggit"
-            ><i class="fa-brands fa-github"></i
-          ></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <!-- Katex  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+    integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+    integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja"
+    crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <title>Logarithms explained</title>
+</head>
+
+<body>
+  <div class="sidebar" id="sidebar">
+    <ol>
+      <li><a href="./index.html">Getting Started</a></li>
+      <li><a href="./why_log.html">Why logs ?</a></li>
+      <li><a href="./basics.html">Basics of log</a></li>
+      <li><a href="./identities.html" id="active">The identities</a></li>
+      <li><a href="./getting_log_values.html">Getting the log values</a></li>
+      <li><a href="./workarounds.html">A few workarounds</a></li>
+      <li><a href="./operation.html">Operating with them</a></li>
+      <li><a href="./antilog.html">Antilogs</a></li>
+      <li>
+        <a href="./getting_antilog_values.html">Getting the antilog values</a>
+      </li>
+      <li>
+        <a href="./addition_subtraction.html">One tiny addition (and subtraction)</a>
+      </li>
+      <li><a href="./conclusion.html">Conclusion</a></li>
+    </ol>
+  </div>
+  <div class="container" id="container">
+    <header>
+      <i class="fa-solid fa-bars" id="sidebar_btn" onclick="moveNav()"></i>
+      <h3 class="title">Logarithms Explained</h3>
+      <div class="links-container">
+        <a target="_blank" href="./public/book_pdf.pdf"><i class="fa-solid fa-print"></i></a>
+        <a target="_blank" href="https://github.com/amazinglySK/loggit"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <h1>The Identities</h1>
+        <div class="text">
+          <p>
+            Logarithmic identities are many but here we’ll focus on a few
+            important ones which we’ll be using frequently. These identities,
+            as you may observe are similar to the radical(exponents)
+            identities that you’ve learnt in the previous classes
+          </p>
+          <p>
+            $$ \log_{b}(x.y) = \log_{b}(x) + \log_{b}(y)\\
+            \log_{b}{\frac{x}{y}} = \log_{b}(x) - \log_{b}(y)\\ \log_{b}{x^d}
+            = d\log_{b}(x) $$
+          </p>
+          <p></p>
         </div>
-      </header>
-      <main>
-        <div class="content">
-          <h1>The Identities</h1>
-          <div class="text">
-            <p>
-              Logarithmic identities are many but here we’ll focus on a few
-              important ones which we’ll be using frequently. These identities,
-              as you may observe are similar to the radical(exponents)
-              identities that you’ve learnt in the previous classes
-            </p>
-            <p>
-              $$ \log_{b}(x.y) = \log_{b}(x) + \log_{b}(y)\\
-              \log_{b}{\frac{x}{y}} = \log_{b}(x) - \log_{b}(y)\\ \log_{b}{x^d}
-              = d\log_{b}(x) $$
-            </p>
-            <p></p>
-          </div>
-        </div>
-        <div class="pointer-container">
-          <a href="./basics.html"><i class="fa-solid fa-backward"></i></a>
-          <a href="./getting_log_values.html"
-            ><i class="fa-solid fa-forward"></i
-          ></a>
-        </div>
-      </main>
-    </div>
-    <script src="./app.js"></script>
-  </body>
+      </div>
+      <div class="pointer-container">
+        <a href="./basics.html"><i class="fa-solid fa-backward"></i></a>
+        <a href="./getting_log_values.html"><i class="fa-solid fa-forward"></i></a>
+      </div>
+    </main>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
 </html>

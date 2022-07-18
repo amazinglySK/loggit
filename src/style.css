@@ -34,9 +34,13 @@ html {
 }
 
 .sidebar a {
-  font-weight: 700;
+  font-weight: 500;
   color: var(--text-color);
   text-decoration: none;
+}
+
+#active {
+  font-weight: 700;
 }
 
 .sidebar ol {
@@ -67,7 +71,7 @@ header a {
   color: inherit;
 }
 
-header > h3 {
+header>h3 {
   color: var(--accent-color);
   font-size: 2.4rem;
   white-space: nowrap;
@@ -81,6 +85,7 @@ li {
 .content li {
   line-height: 1.5em;
 }
+
 .content ol {
   margin: 1rem 0;
 }
