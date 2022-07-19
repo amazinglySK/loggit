@@ -17,6 +17,7 @@
 html {
   font-family: "Ubuntu", sans-serif;
   background-color: var(--bg-color);
+  font-size: 100%;
 }
 
 .sidebar {
@@ -71,7 +72,7 @@ header a {
   color: inherit;
 }
 
-header>h3 {
+header > h3 {
   color: var(--accent-color);
   font-size: 2.4rem;
   white-space: nowrap;
@@ -132,4 +133,19 @@ h1 {
 .text {
   font-size: 1.5rem;
   line-height: 1.45em;
+}
+.fa-xmark {
+  visibility: hidden;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 70%;
+  }
+  .container {
+    margin-left: 0px;
+  }
+  .fa-xmark {
+    visibility: visible;
+  }
 }

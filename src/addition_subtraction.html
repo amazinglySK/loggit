@@ -1,92 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Logarithms explained</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>Logarithms explained</title>
-</head>
-
-<body>
-  <div class="sidebar" id="sidebar">
-    <ol>
-      <li><a href="./index.html">Getting Started</a></li>
-      <li><a href="./why_log.html">Why logs ?</a></li>
-      <li><a href="./basics.html">Basics of log</a></li>
-      <li><a href="./identities.html">The identities</a></li>
-      <li><a href="./getting_log_values.html">Getting the log values</a></li>
-      <li><a href="./workarounds.html">A few workarounds</a></li>
-      <li><a href="./operation.html">Operating with them</a></li>
-      <li><a href="./antilog.html">Antilogs</a></li>
-      <li>
-        <a href="./getting_antilog_values.html">Getting the antilog values</a>
-      </li>
-      <li>
-        <a href="./addition_subtraction.html" id="active">One tiny addition (and subtraction)</a>
-      </li>
-      <li><a href="./conclusion.html">Conclusion</a></li>
-    </ol>
-  </div>
-  <div class="container" id="container">
-    <header>
-      <i class="fa-solid fa-bars" id="sidebar_btn" onclick="moveNav()"></i>
-      <h3 class="title">Logarithms Explained</h3>
-      <div class="links-container">
-        <a target="_blank" href="./public/book_pdf.pdf"><i class="fa-solid fa-print"></i></a>
-        <a target="_blank" href="https://github.com/amazinglySK/loggit"><i class="fa-brands fa-github"></i></a>
-      </div>
-    </header>
-    <main>
-      <div class="content">
-        <h1>One tiny addition (and subtraction)</h1>
-        <div class="text">
-          <p>
-            Often times when you calculate the log values you get negative
-            values. Now wait a second there. Do not directly use the antilog
-            table for it.
-          </p>
-          <ol>
-            <li>
-              Subtract one to the part before the decimal. So if it’s -6 it
-              would become -7.
-            </li>
-            <li>
-              Add one to the part after decimal. So if it’s
-              <strong>-</strong>0.2345 (don’t forget to take that negative
-              sign) it would become 1-0.2345 = 0.7655
-            </li>
-            <li>
-              So in this case we obtain -7.7655 (in writing don’t put that
-              negative sign rather write it as a bar on top of 7)
-            </li>
-            <li>
-              Now find the antilog in the antilog table for that number.
-            </li>
-            <li>
-              Once you find the answer in the log table, write it down and put
-              the decimal one digit after the number. Then multiply the answer
-              with
-              <span class="math inline">10<sup> − <em>x</em></sup></span>
-              where x is the characteristic.
-            </li>
-          </ol>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
+      <ol>
+        <li><a href="./index.html">Getting Started</a></li>
+        <li><a href="./why_log.html">Why logs ?</a></li>
+        <li><a href="./basics.html">Basics of log</a></li>
+        <li><a href="./identities.html">The identities</a></li>
+        <li><a href="./getting_log_values.html">Getting the log values</a></li>
+        <li><a href="./workarounds.html">A few workarounds</a></li>
+        <li><a href="./operation.html">Operating with them</a></li>
+        <li><a href="./antilog.html">Antilogs</a></li>
+        <li>
+          <a href="./getting_antilog_values.html">Getting the antilog values</a>
+        </li>
+        <li>
+          <a href="./addition_subtraction.html" id="active"
+            >One tiny addition (and subtraction)</a
+          >
+        </li>
+        <li><a href="./conclusion.html">Conclusion</a></li>
+      </ol>
+    </div>
+    <div class="container" id="container">
+      <header>
+        <i class="fa-solid fa-bars" id="sidebar_btn" onclick="moveNav()"></i>
+        <h3 class="title">Logarithms Explained</h3>
+        <div class="links-container">
+          <a target="_blank" href="./public/book_pdf.pdf"
+            ><i class="fa-solid fa-print"></i
+          ></a>
+          <a target="_blank" href="https://github.com/amazinglySK/loggit"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
-      </div>
-      <div class="pointer-container">
-        <a href="./getting_antilog_values.html"><i class="fa-solid fa-backward"></i></a>
-        <a href="./conclusion.html"><i class="fa-solid fa-forward"></i></a>
-      </div>
-    </main>
-  </div>
-  <script src="./app.js"></script>
-</body>
-
+      </header>
+      <main>
+        <div class="content">
+          <h1>One tiny addition (and subtraction)</h1>
+          <div class="text">
+            <p>
+              Often times when you calculate the log values you get negative
+              values. Now wait a second there. Do not directly use the antilog
+              table for it.
+            </p>
+            <ol>
+              <li>
+                Subtract one to the part before the decimal. So if it’s -6 it
+                would become -7.
+              </li>
+              <li>
+                Add one to the part after decimal. So if it’s
+                <strong>-</strong>0.2345 (don’t forget to take that negative
+                sign) it would become 1-0.2345 = 0.7655
+              </li>
+              <li>
+                So in this case we obtain -7.7655 (in writing don’t put that
+                negative sign rather write it as a bar on top of 7)
+              </li>
+              <li>
+                Now find the antilog in the antilog table for that number.
+              </li>
+              <li>
+                Once you find the answer in the log table, write it down and put
+                the decimal one digit after the number. Then multiply the answer
+                with
+                <span class="math inline"
+                  >10<sup> − <em>x</em></sup></span
+                >
+                where x is the characteristic.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="pointer-container">
+          <a href="./getting_antilog_values.html"
+            ><i class="fa-solid fa-backward"></i
+          ></a>
+          <a href="./conclusion.html"><i class="fa-solid fa-forward"></i></a>
+        </div>
+      </main>
+    </div>
+    <script src="./app.js"></script>
+  </body>
 </html>
