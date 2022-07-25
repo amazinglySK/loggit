@@ -1,102 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Logarithms explained</title>
-  </head>
 
-  <body>
-    <div class="sidebar" id="sidebar">
-      <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
-      <ol>
-        <li><a href="./index.html">Getting Started</a></li>
-        <li><a href="./why_log.html">Why Logs ?</a></li>
-        <li><a href="./basics.html">Basics of Logs</a></li>
-        <li><a href="./identities.html">The Identities</a></li>
-        <li><a href="./getting_log_values.html">Getting the Log Values</a></li>
-        <li><a href="./workarounds.html">A Few Workarounds</a></li>
-        <li><a href="./operation.html" id="active">Operating with them</a></li>
-        <li><a href="./antilog.html">Anitlogarithms</a></li>
-        <li>
-          <a href="./getting_antilog_values.html">Getting the Antilog Values</a>
-        </li>
-        <li>
-          <a href="./addition_subtraction.html">One More Thing</a>
-        </li>
-        <li><a href="./conclusion.html">Conclusion</a></li>
-      </ol>
-    </div>
-    <div class="container" id="container">
-      <header>
-        <i class="fa-solid fa-bars" id="sidebar_btn" onclick="moveNav()"></i>
-        <h3 class="title">Logarithms Explained</h3>
-        <div class="links-container">
-          <a target="_blank" href="./public/book_pdf.pdf"
-            ><i class="fa-solid fa-print"></i
-          ></a>
-          <a target="_blank" href="https://github.com/amazinglySK/loggit"
-            ><i class="fa-brands fa-github"></i
-          ></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="favicon.png">
+  <title>Logarithms explained</title>
+</head>
+
+<body>
+  <div class="sidebar" id="sidebar">
+    <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
+    <ol>
+      <li><a href="./index.html">Getting Started</a></li>
+      <li><a href="./why_log.html">Why Logs ?</a></li>
+      <li><a href="./basics.html">Basics of Logs</a></li>
+      <li><a href="./identities.html">The Identities</a></li>
+      <li><a href="./getting_log_values.html">Getting the Log Values</a></li>
+      <li><a href="./workarounds.html">A Few Workarounds</a></li>
+      <li><a href="./operation.html" id="active">Operating with them</a></li>
+      <li><a href="./antilog.html">Antilogarithms</a></li>
+      <li>
+        <a href="./getting_antilog_values.html">Getting the Antilog Values</a>
+      </li>
+      <li>
+        <a href="./addition_subtraction.html">One More Thing</a>
+      </li>
+      <li><a href="./conclusion.html">Conclusion</a></li>
+    </ol>
+  </div>
+  <div class="container" id="container">
+    <header>
+      <i class="fa-solid fa-bars" id="sidebar_btn" onclick="moveNav()"></i>
+      <h3 class="title">Logarithms Explained</h3>
+      <div class="links-container">
+        <a target="_blank" href="./public/book_pdf.pdf"><i class="fa-solid fa-print"></i></a>
+        <a target="_blank" href="https://github.com/amazinglySK/loggit"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <h1>Operating with them</h1>
+        <div class="text">
+          <p>
+            As you may have seen in the identities section, you can operate on
+            numbers with logs! It just boils down to addition or subtraction !
+            So let’s take look on how to do this. We’ll continue with
+            <span class="mul">42.33×32.1</span> and
+            <span class="div">42.33÷32.1</span>. The log value of 42.33 is
+            1.6266 and 32.1 is 1.5065 (try it yourself).
+          </p>
+          <ol>
+            <li>
+              As seen in the identities section, when you take log of
+              something <span class="mul">multiplied</span> by or
+              <span class="div">divided</span> by something you
+              <span class="mul">add</span> or
+              <span class="div">subtract</span> respectively.
+            </li>
+            <li>
+              Here too add or subtract the values. So if it was multiplication
+              it would be <span class="mul">1.6266+1.5065 = 3.1331</span> and
+              for division it would be
+              <span class="div">1.6266-1.5065 = 0.1201</span>.
+            </li>
+            <li>This is your final log value.</li>
+          </ol>
+          <p>
+            But as you may see this is not an answer is it? How could the
+            answer be so small. Well you’re right. For obtaining the final
+            answer we’ll have to uncover what antilogarithm or simply antilog
+            is.
+          </p>
         </div>
-      </header>
-      <main>
-        <div class="content">
-          <h1>Operating with them</h1>
-          <div class="text">
-            <p>
-              As you may have seen in the identities section, you can operate on
-              numbers with logs! It just boils down to addition or subtraction !
-              So let’s take look on how to do this. We’ll continue with
-              <span class="mul">42.33×32.1</span> and
-              <span class="div">42.33÷32.1</span>. The log value of 42.33 is
-              1.6266 and 32.1 is 1.5065 (try it yourself).
-            </p>
-            <ol>
-              <li>
-                As seen in the identities section, when you take log of
-                something <span class="mul">multiplied</span> by or
-                <span class="div">divided</span> by something you
-                <span class="mul">add</span> or
-                <span class="div">subtract</span> respectively.
-              </li>
-              <li>
-                Here too add or subtract the values. So if it was multiplication
-                it would be <span class="mul">1.6266+1.5065 = 3.1331</span> and
-                for division it would be
-                <span class="div">1.6266-1.5065 = 0.1201</span>.
-              </li>
-              <li>This is your final log value.</li>
-            </ol>
-            <p>
-              But as you may see this is not an answer is it? How could the
-              answer be so small. Well you’re right. For obtaining the final
-              answer we’ll have to uncover what antilogarithm or simply antilog
-              is.
-            </p>
-          </div>
-        </div>
-        <div class="pointer-container">
-          <a href="./workarounds.html"><i class="fa-solid fa-backward"></i></a>
-          <a href="./antilog.html"><i class="fa-solid fa-forward"></i></a>
-        </div>
-      </main>
-    </div>
-    <script src="./app.js"></script>
-  </body>
+      </div>
+      <div class="pointer-container">
+        <a href="./workarounds.html"><i class="fa-solid fa-backward"></i></a>
+        <a href="./antilog.html"><i class="fa-solid fa-forward"></i></a>
+      </div>
+    </main>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
 </html>

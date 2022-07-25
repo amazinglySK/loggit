@@ -1,85 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Logarithms explained</title>
-  </head>
 
-  <body>
-    <div class="sidebar" id="sidebar">
-      <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
-      <ol>
-        <li><a href="./index.html" id="active">Getting Started</a></li>
-        <li><a href="./why_log.html">Why Logs ?</a></li>
-        <li><a href="./basics.html">Basics of Logs</a></li>
-        <li><a href="./identities.html">The Identities</a></li>
-        <li><a href="./getting_log_values.html">Getting the Log Values</a></li>
-        <li><a href="./workarounds.html">A Few Workarounds</a></li>
-        <li><a href="./operation.html">Operating with them</a></li>
-        <li><a href="./antilog.html">Antilogarithms</a></li>
-        <li>
-          <a href="./getting_antilog_values.html">Getting the Antilog Values</a>
-        </li>
-        <li>
-          <a href="./addition_subtraction.html">One More Thing</a>
-        </li>
-        <li><a href="./conclusion.html">Conclusion</a></li>
-      </ol>
-    </div>
-    <div class="container" id="container">
-      <header>
-        <i class="fa-solid fa-bars" id="sidebar_btn" onclick="moveNav()"></i>
-        <h3 class="title">Logarithms Explained</h3>
-        <div class="links-container">
-          <a target="_blank" href="./public/book_pdf.pdf"
-            ><i class="fa-solid fa-print"></i
-          ></a>
-          <a target="_blank" href="https://github.com/amazinglySK/loggit"
-            ><i class="fa-brands fa-github"></i
-          ></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="favicon.png">
+  <title>Logarithms explained</title>
+</head>
+
+<body>
+  <div class="sidebar" id="sidebar">
+    <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
+    <ol>
+      <li><a href="./index.html" id="active">Getting Started</a></li>
+      <li><a href="./why_log.html">Why Logs ?</a></li>
+      <li><a href="./basics.html">Basics of Logs</a></li>
+      <li><a href="./identities.html">The Identities</a></li>
+      <li><a href="./getting_log_values.html">Getting the Log Values</a></li>
+      <li><a href="./workarounds.html">A Few Workarounds</a></li>
+      <li><a href="./operation.html">Operating with them</a></li>
+      <li><a href="./antilog.html">Antilogarithms</a></li>
+      <li>
+        <a href="./getting_antilog_values.html">Getting the Antilog Values</a>
+      </li>
+      <li>
+        <a href="./addition_subtraction.html">One More Thing</a>
+      </li>
+      <li><a href="./conclusion.html">Conclusion</a></li>
+    </ol>
+  </div>
+  <div class="container" id="container">
+    <header>
+      <i class="fa-solid fa-bars" id="sidebar_btn" onclick="moveNav()"></i>
+      <h3 class="title">Logarithms Explained</h3>
+      <div class="links-container">
+        <a target="_blank" href="./public/book_pdf.pdf"><i class="fa-solid fa-print"></i></a>
+        <a target="_blank" href="https://github.com/amazinglySK/loggit"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <h1>Getting Started</h1>
+        <div class="text">
+          <p>
+            Right as you enter into your higher secondary, you're faced with a
+            new challenge. Values get weirder and you find it amusing (and
+            frustrating) how you don't find a single common factor between the
+            numbers. And in CBSE, where calculators don’t belong in a bag, you
+            might end up feeling a bit lost. This is where logarithms come in
+            to save the day.
+          </p>
+          <p>
+            Being handed a matrix of random sequence of numbers, you're now
+            bamboozled. Let's try breakdown what logarithms are, its uses and
+            at the end let's see if you'll be able to appreciate it's
+            functionality.
+          </p>
         </div>
-      </header>
-      <main>
-        <div class="content">
-          <h1>Getting Started</h1>
-          <div class="text">
-            <p>
-              Right as you enter into your higher secondary, you're faced with a
-              new challenge. Values get weirder and you find it amusing (and
-              frustrating) how you don't find a single common factor between the
-              numbers. And in CBSE, where calculators don’t belong in a bag, you
-              might end up feeling a bit lost. This is where logarithms come in
-              to save the day.
-            </p>
-            <p>
-              Being handed a matrix of random sequence of numbers, you're now
-              bamboozled. Let's try breakdown what logarithms are, its uses and
-              at the end let's see if you'll be able to appreciate it's
-              functionality.
-            </p>
-          </div>
-        </div>
-        <div class="pointer-container">
-          <a href="./why_log.html"><i class="fa-solid fa-forward"></i></a>
-        </div>
-      </main>
-    </div>
-    <script src="./app.js"></script>
-  </body>
+      </div>
+      <div class="pointer-container">
+        <a href="./why_log.html"><i class="fa-solid fa-forward"></i></a>
+      </div>
+    </main>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
 </html>
