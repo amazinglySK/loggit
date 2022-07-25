@@ -138,6 +138,14 @@ h1 {
   visibility: hidden;
 }
 
+.mul {
+  color: #5ab8ee;
+}
+
+.div {
+  color: #f68e3e;
+}
+
 @media (max-width: 800px) {
   html {
     font-size: 70%;
