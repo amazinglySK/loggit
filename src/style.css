@@ -9,9 +9,9 @@
 :root {
   --accent-color: #DB6443;
   --text-color: #292B3D;
-  --bg-color: rgb(255, 253, 248);
-  --light-bg-color: rgb(244, 241, 230);
-  --links-color: #787DA5;
+  --bg-color: rgb(255, 252, 248);
+  --light-bg-color: rgb(245, 236, 224);
+  --links-color: #ce7c66;
 }
 
 
@@ -30,7 +30,7 @@ html {
   top: 0;
   left: 0;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
   padding: 2rem;
   background-color: var(--light-bg-color);
 }
