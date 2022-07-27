@@ -136,6 +136,7 @@ h1 {
 }
 .fa-xmark {
   visibility: hidden;
+  cursor: pointer;
 }
 
 .mul {
@@ -144,6 +145,71 @@ h1 {
 
 .div {
   color: #f68e3e;
+}
+
+#vid_btn {
+  width: max-content;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+  /* outline: none; */
+  border: 2px solid var(--accent-color);
+  padding: 5px;
+  transition: ease-in-out 0.2s;
+}
+
+#vid_btn:hover {
+  background-color: var(--light-bg-color);
+}
+
+/*Modal Box*/
+.video-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Fuvwll height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: transparent;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 20px;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content > .vid_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vid_box > video {
+  width: 80%;
+  height: 50%;
+}
+
+.close {
+  color: #000000;
+  position: absolute;
+  /* float: right; */
+  left: 75%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {

@@ -62,6 +62,17 @@
       <main>
         <div class="content">
           <h1>Getting the Log Values</h1>
+          <button id="vid_btn" onclick="openVid()">Video Explanation</button>
+          <div class="video-modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="vid_box">
+                <video id="video" controls>
+                  <source src="./public/getting_log_values.mkv" />
+                </video>
+              </div>
+            </div>
+          </div>
           <div class="text">
             <p>
               Now that you’ve seen the identities, let’s try making use of those

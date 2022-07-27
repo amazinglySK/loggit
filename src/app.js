@@ -20,3 +20,19 @@ function openNav() {
   document.getElementById("sidebar").style.padding = "2rem";
   open = true;
 }
+
+var modal = document.getElementsByClassName("video-modal")[0];
+var span = document.getElementsByClassName("close")[0];
+function openVid() {
+  modal.style.display = "block";
+}
+span.onclick = function () {
+  modal.style.display = "none";
+  document.getElementById("video").pause();
+};
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    document.getElementById("video").pause();
+  }
+};
