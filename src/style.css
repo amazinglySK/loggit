@@ -7,12 +7,13 @@
 }
 
 :root {
-  --accent-color: #ee6352;
-  --text-color: #393e41;
-  --bg-color: #f1f7ed;
-  --light-bg-color: #e8eddf;
-  --links-color: #989fce;
+  --accent-color: #DB6443;
+  --text-color: #292B3D;
+  --bg-color: rgb(255, 253, 248);
+  --light-bg-color: rgb(244, 241, 230);
+  --links-color: #787DA5;
 }
+
 
 html {
   font-family: "Ubuntu", sans-serif;
@@ -72,7 +73,7 @@ header a {
   color: inherit;
 }
 
-header > h3 {
+header>h3 {
   color: var(--accent-color);
   font-size: 2.4rem;
   white-space: nowrap;
@@ -113,6 +114,12 @@ li {
   margin: 2rem auto;
 }
 
+.fa-print,
+.fa-github,
+.fa-bars {
+  color: var(--text-color);
+}
+
 .fa-forward,
 .fa-backward {
   color: var(--accent-color);
@@ -130,10 +137,12 @@ h1 {
   font-size: 2.5rem;
 }
 
+
 .text {
   font-size: 1.5rem;
   line-height: 1.45em;
 }
+
 .fa-xmark {
   visibility: hidden;
   cursor: pointer;
@@ -216,10 +225,16 @@ h1 {
   html {
     font-size: 70%;
   }
+
   .container {
     margin-left: 0px;
   }
+
   .fa-xmark {
     visibility: visible;
   }
+}
+
+a {
+  color: #f28482;
 }
