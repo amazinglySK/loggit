@@ -174,49 +174,58 @@ h1 {
 
 /*Modal Box*/
 .video-modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
-  width: 100vw; /* Full width */
-  height: 100vh; /* Fuvwll height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100vw;
+  /* Full width */
+  height: 100vh;
+  /* Fuvwll height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
 .modal-content {
   background-color: transparent;
-  margin: 10% auto;
+  margin: 8% auto;
   padding: 20px;
   border-radius: 20px;
-  width: 60%; /* Could be more or less, depending on screen size */
+  width: 60%;
+  /* Could be more or less, depending on screen size */
 }
 
-.modal-content > .vid_box {
+.modal-content>.vid_box {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.vid_box > video {
-  width: 80%;
-  height: 50%;
+.vid_box>video {
+  width: 90%;
+  height: 60%;
 }
 
 .close {
   color: #000000;
   position: absolute;
   /* float: right; */
-  left: 75%;
-  font-size: 28px;
+  left: 77%;
+  font-size: 40px;
   font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: rgb(49, 49, 49);
   text-decoration: none;
   cursor: pointer;
 }
