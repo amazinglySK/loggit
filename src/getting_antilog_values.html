@@ -1,118 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="favicon.png" />
-    <title>Logarithms explained</title>
-  </head>
 
-  <body>
-    <div class="sidebar" id="sidebar">
-      <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
-      <ol>
-        <li><a href="./index.html">Getting Started</a></li>
-        <li><a href="./why_log.html">Why Logs?</a></li>
-        <li><a href="./basics.html">Basics of Logs</a></li>
-        <li><a href="./identities.html">The Identities</a></li>
-        <li><a href="./getting_log_values.html">Getting the Log Values</a></li>
-        <li><a href="./workarounds.html">A Few Workarounds</a></li>
-        <li><a href="./operation.html">Operating with them</a></li>
-        <li><a href="./antilog.html">Antilogarithms</a></li>
-        <li>
-          <a href="./getting_antilog_values.html" id="active"
-            >Getting the Antilog Values</a
-          >
-        </li>
-        <li>
-          <a href="./addition_subtraction.html">One More Thing</a>
-        </li>
-        <li><a href="./conclusion.html">Conclusion</a></li>
-      </ol>
-    </div>
-    <div class="container" id="container">
-      <header>
-        <i class="fa-solid fa-bars" id="sidebar_btn" onclick="moveNav()"></i>
-        <h3 class="title">Logarithms Explained</h3>
-        <div class="links-container">
-          <a target="_blank" href="./public/book_pdf.pdf"
-            ><i class="fa-solid fa-print"></i
-          ></a>
-          <a target="_blank" href="https://github.com/amazinglySK/loggit"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </div>
-      </header>
-      <main>
-        <div class="content">
-          <h1>Getting the Antilog Values</h1>
-          <button id="vid_btn" onclick="openVid()">Video Explanation</button>
-          <div class="video-modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <div class="vid_box">
-                <video id="video" controls>
-                  <source src="./public/antilog.mkv" />
-                  <source src="./public/antilog.mp4" />
-                </video>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="favicon.png" />
+  <title>Logarithms explained</title>
+</head>
+
+<body>
+  <div class="sidebar" id="sidebar">
+    <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
+    <ol class="navigation">
+      <li class="sidelink"><a href="./index.html">Getting Started</a></li>
+      <li class="sidelink"><a href="./why_log.html">Why Logs?</a></li>
+      <li class="sidelink"><a href="./basics.html">Basics of Logs</a></li>
+      <li class="sidelink"><a href="./identities.html">The Identities</a></li>
+      <li class="sidelink"><a href="./getting_log_values.html">Getting the Log Values</a></li>
+      <li class="sidelink"><a href="./workarounds.html">A Few Workarounds</a></li>
+      <li class="sidelink"><a href="./operation.html">Operating with them</a></li>
+      <li class="sidelink"><a href="./antilog.html">Antilogarithms</a></li>
+      <li class="sidelink">
+        <a href="./getting_antilog_values.html" id="active">Getting the Antilog Values</a>
+      </li>
+      <li class="sidelink">
+        <a href="./addition_subtraction.html">One More Thing</a>
+      </li>
+      <li class="sidelink"><a href="./conclusion.html">Conclusion</a></li>
+    </ol>
+  </div>
+  <div class="container" id="container">
+    <header>
+      <i class="fa-solid fa-bars" id="sidebar_btn" onclick="moveNav()"></i>
+      <h3 class="title">Logarithms Explained</h3>
+      <div class="links-container">
+        <a target="_blank" href="./public/book_pdf.pdf"><i class="fa-solid fa-print"></i></a>
+        <a target="_blank" href="https://github.com/amazinglySK/loggit"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <h1>Getting the Antilog Values</h1>
+        <button id="vid_btn" onclick="openVid()">Video Explanation</button>
+        <div class="video-modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="vid_box">
+              <video id="video" controls>
+                <source src="./public/antilog.mkv" />
+                <source src="./public/antilog.mp4" />
+              </video>
             </div>
           </div>
-          <div class="text">
-            <p>
-              If you’ve understood how to locate the log values, this process is
-              pretty straightforward. We’ll continue with our example
-              <span class="mul">3.1331 (for multiplication)</span> and
-              <span class="div">0.1201 (for division)</span>.
-            </p>
-            <ol>
-              <li>
-                Omit the decimal and the number before it (3 and 0 here. These
-                are the characteristics)
-              </li>
-              <li>
-                Take the antilog table and just follow the same steps as we did
-                for finding logs. [<span class="mul">1358</span>,
-                <span class="div">1318</span>]
-              </li>
-              <li>
-                Once you obtain a four digit answer take the characteristic and
-                add one to it. Place the decimal point after those many digits
-                from the left [<span class="mul">1358</span>,
-                <span class="div">1.318</span>]
-              </li>
-            </ol>
-            <p>
-              Well, if you now use a calculator and see for yourself, these
-              values are near accurate. But always remember, log tables have a
-              maximum resolution of 4 digits. Precision varies with the
-              characteristic.
-            </p>
-          </div>
         </div>
-        <div class="pointer-container">
-          <a href="./antilog.html"><i class="fa-solid fa-backward"></i></a>
-          <a href="./addition_subtraction.html"
-            ><i class="fa-solid fa-forward"></i
-          ></a>
+        <div class="text">
+          <p>
+            If you’ve understood how to locate the log values, this process is
+            pretty straightforward. We’ll continue with our example
+            <span class="mul">3.1331 (for multiplication)</span> and
+            <span class="div">0.1201 (for division)</span>.
+          </p>
+          <ol>
+            <li>
+              Omit the decimal and the number before it (3 and 0 here. These
+              are the characteristics)
+            </li>
+            <li>
+              Take the antilog table and just follow the same steps as we did
+              for finding logs. [<span class="mul">1358</span>,
+              <span class="div">1318</span>]
+            </li>
+            <li>
+              Once you obtain a four digit answer take the characteristic and
+              add one to it. Place the decimal point after those many digits
+              from the left [<span class="mul">1358</span>,
+              <span class="div">1.318</span>]
+            </li>
+          </ol>
+          <p>
+            Well, if you now use a calculator and see for yourself, these
+            values are near accurate. But always remember, log tables have a
+            maximum resolution of 4 digits. Precision varies with the
+            characteristic.
+          </p>
         </div>
-      </main>
-    </div>
-    <script src="./app.js"></script>
-  </body>
+      </div>
+      <div class="pointer-container">
+        <a href="./antilog.html"><i class="fa-solid fa-backward"></i></a>
+        <a href="./addition_subtraction.html"><i class="fa-solid fa-forward"></i></a>
+      </div>
+    </main>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
 </html>
