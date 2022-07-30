@@ -1,7 +1,17 @@
-var open = true;
+initiateNav();
+
+function initiateNav() {
+  let open = window.localStorage.getItem("nav_stat");
+  if (open === "false") {
+    closeNav();
+  } else {
+    openNav();
+  }
+}
 
 function moveNav() {
-  if (open == false) {
+  let open = window.localStorage.getItem("nav_stat");
+  if (open === "false") {
     openNav();
   } else {
     closeNav();
@@ -12,13 +22,13 @@ function closeNav() {
   document.getElementById("container").style.margin = "0px";
   document.getElementById("sidebar").style.width = "0px";
   document.getElementById("sidebar").style.padding = "0px";
-  open = false;
+  window.localStorage.setItem("nav_stat", "false");
 }
 function openNav() {
   document.getElementById("container").style.marginLeft = "300px";
   document.getElementById("sidebar").style.width = "300px";
   document.getElementById("sidebar").style.padding = "2rem";
-  open = true;
+  window.localStorage.setItem("nav_stat", "true");
 }
 
 var modal = document.getElementsByClassName("video-modal")[0];

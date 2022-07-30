@@ -7,13 +7,12 @@
 }
 
 :root {
-  --accent-color: #DB6443;
-  --text-color: #292B3D;
+  --accent-color: #db6443;
+  --text-color: #292b3d;
   --bg-color: rgb(255, 252, 248);
   --light-bg-color: rgb(245, 236, 224);
   --links-color: #ce7c66;
 }
-
 
 html {
   font-family: "Ubuntu", sans-serif;
@@ -73,7 +72,7 @@ header a {
   color: inherit;
 }
 
-header>h3 {
+header > h3 {
   color: var(--accent-color);
   font-size: 2.4rem;
   white-space: nowrap;
@@ -137,7 +136,6 @@ h1 {
   font-size: 2.5rem;
 }
 
-
 .text {
   font-size: 1.5rem;
   line-height: 1.45em;
@@ -145,6 +143,10 @@ h1 {
 
 .fa-xmark {
   visibility: hidden;
+  cursor: pointer;
+}
+
+#sidebar_btn {
   cursor: pointer;
 }
 
@@ -203,13 +205,13 @@ h1 {
   /* Could be more or less, depending on screen size */
 }
 
-.modal-content>.vid_box {
+.modal-content > .vid_box {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.vid_box>video {
+.vid_box > video {
   width: 90%;
   height: 60%;
 }
@@ -252,6 +254,6 @@ a {
   margin-top: 28%;
 }
 
-.navigation>.sidelink {
+.navigation > .sidelink {
   margin-top: 3%;
 }
