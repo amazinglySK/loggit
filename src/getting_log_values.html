@@ -1,123 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="favicon.png" />
+    <title>Logarithms explained</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="icon" href="favicon.png" />
-  <title>Logarithms explained</title>
-</head>
-
-<body>
-  <div class="sidebar" id="sidebar">
-    <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
-    <ol class="navigation">
-      <li class="sidelink"><a href="./index.html">Getting Started</a></li>
-      <li class="sidelink"><a href="./why_log.html">Why Logs?</a></li>
-      <li class="sidelink"><a href="./basics.html">Basics of Logs</a></li>
-      <li class="sidelink"><a href="./identities.html">The Identities</a></li>
-      <li class="sidelink"><a href="./getting_log_values.html" id="active">Getting the Log Values</a></li>
-      <li class="sidelink"><a href="./workarounds.html">A Few Workarounds</a></li>
-      <li class="sidelink"><a href="./operation.html">Operating with them</a></li>
-      <li class="sidelink"><a href="./antilog.html">Antilogarithms</a></li>
-      <li class="sidelink">
-        <a href="./getting_antilog_values.html">Getting the Antilog Values</a>
-      </li>
-      <li class="sidelink">
-        <a href="./addition_subtraction.html">One More Thing</a>
-      </li>
-      <li class="sidelink"><a href="./conclusion.html">Conclusion</a></li>
-    </ol>
-  </div>
-  <div class="container" id="container">
-    <header>
-      <i class="fa-solid fa-bars" id="sidebar_btn" onclick="moveNav()"></i>
-      <h3 class="title">Logarithms Explained</h3>
-      <div class="links-container">
-        <a target="_blank" href="./public/book_pdf.pdf"><i class="fa-solid fa-print"></i></a>
-        <a target="_blank" href="https://github.com/amazinglySK/loggit"><i class="fa-brands fa-github"></i></a>
-      </div>
-    </header>
-    <main>
-      <div class="content">
-        <h1>Getting the Log Values</h1>
-        <button id="vid_btn" onclick="openVid()">Video Explanation</button>
-        <div class="video-modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="vid_box">
-              <video id="video" controls>
-                <source src="./public/getting_log_values.mkv" />
-                <source src="./public/getting_log_values.mp4" />
-              </video>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
+      <ol class="navigation">
+        <li class="sidelink"><a href="./index.html">Getting Started</a></li>
+        <li class="sidelink"><a href="./why_log.html">Why Logs?</a></li>
+        <li class="sidelink"><a href="./basics.html">Basics of Logs</a></li>
+        <li class="sidelink"><a href="./identities.html">The Identities</a></li>
+        <li class="sidelink">
+          <a href="./getting_log_values.html" id="active"
+            >Getting the Log Values</a
+          >
+        </li>
+        <li class="sidelink">
+          <a href="./workarounds.html">A Few Workarounds</a>
+        </li>
+        <li class="sidelink">
+          <a href="./operation.html">Operating with them</a>
+        </li>
+        <li class="sidelink"><a href="./antilog.html">Antilogarithms</a></li>
+        <li class="sidelink">
+          <a href="./getting_antilog_values.html">Getting the Antilog Values</a>
+        </li>
+        <li class="sidelink">
+          <a href="./addition_subtraction.html">One More Thing</a>
+        </li>
+        <li class="sidelink"><a href="./conclusion.html">Conclusion</a></li>
+      </ol>
+    </div>
+    <div class="container" id="container">
+      <header>
+        <i class="fa-solid fa-bars" id="sidebar_btn" onclick="moveNav()"></i>
+        <h3 class="title">Logarithms Explained</h3>
+        <div class="links-container">
+          <a target="_blank" href="./public/book_pdf.pdf"
+            ><i class="fa-solid fa-print"></i
+          ></a>
+          <a target="_blank" href="https://github.com/amazinglySK/loggit"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </header>
+      <main>
+        <div class="content">
+          <h1>Getting the Log Values</h1>
+          <button id="vid_btn" onclick="openVid()">Video Explanation</button>
+          <div class="video-modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="vid_box">
+                <video id="video" controls>
+                  <source src="./public/getting_log_values.mkv" />
+                  <source src="./public/getting_log_values.mp4" />
+                </video>
+              </div>
             </div>
           </div>
+          <div class="text">
+            <p>
+              Now that you’ve seen the identities, let’s try making use of those
+              dreadful (and apparently meaningful) numbers. Keep a copy of the
+              <a href="./public/log-antilog-table.pdf" target="_blank">table</a>
+              beside you so that you can follow along.
+            </p>
+            <p>To get the logarithm of a value say 42.333:</p>
+            <ol>
+              <li>
+                Count the number of digits before the decimal point and subtract
+                one. This is your characteristic. So, in the example it would be
+                1.
+              </li>
+              <li>
+                Now omit the decimal point for a moment in your mind. Take the
+                first four digits and write it in rough. [4233]
+              </li>
+              <li>
+                Now head to the log table and check for the first two digits
+                (42) on the left-most column.
+              </li>
+              <li>
+                Once you find the correct row (42nd row), check for the column
+                with 3 in the first row.
+              </li>
+              <li>
+                See the cell which belongs to this row and column. Jot down that
+                number. [= 6263]
+              </li>
+              <li>
+                Now in case there is a fourth digit (as is in our example), head
+                over to the mean difference values (last 9 columns) of the
+                table. Locate the digit (3) in the top row. Find the number that
+                falls in the same row (42nd row) and column (3) [= 3]
+              </li>
+              <li>
+                Add the number to the 4 digits obtained in step 5. [6263 + 3 =
+                6266]
+              </li>
+              <li>
+                Put a decimal point and write down the final result obtained in
+                step 7. Before the decimal point write the characteristic
+                obtained in step 1. [1.6266]
+              </li>
+            </ol>
+            <p>Voila ! You have successfully used the log tables !</p>
+          </div>
         </div>
-        <div class="text">
-          <p>
-            Now that you’ve seen the identities, let’s try making use of those
-            dreadful (and apparently meaningful) numbers. Keep a copy of the
-            <a
-              href="https://toaz.info/viewer/web/viewer.html?file=https%3A%2F%2Ftoaz.info%2Fdocdownloadv2-log-and-antilog-tables-pr_c7378800119dfcee950577294fcc0bb7%3Fdata_code%3Ddcda06240b4bca671c5fa8065388176e#zoom=auto">table</a>
-            beside you so that you can follow along.
-          </p>
-          <p>To get the logarithm of a value say 42.333:</p>
-          <ol>
-            <li>
-              Count the number of digits before the decimal point and subtract
-              one. This is your characteristic. So, in the example it would be
-              1.
-            </li>
-            <li>
-              Now omit the decimal point for a moment in your mind. Take the
-              first four digits and write it in rough. [4233]
-            </li>
-            <li>
-              Now head to the log table and check for the first two digits
-              (42) on the left-most column.
-            </li>
-            <li>
-              Once you find the correct row (42nd row), check for the column
-              with 3 in the first row.
-            </li>
-            <li>
-              See the cell which belongs to this row and column. Jot down that
-              number. [= 6263]
-            </li>
-            <li>
-              Now in case there is a fourth digit (as is in our example), head
-              over to the mean difference values (last 9 columns) of the
-              table. Locate the digit (3) in the top row. Find the number that
-              falls in the same row (42nd row) and column (3) [= 3]
-            </li>
-            <li>
-              Add the number to the 4 digits obtained in step 5. [6263 + 3 =
-              6266]
-            </li>
-            <li>
-              Put a decimal point and write down the final result obtained in
-              step 7. Before the decimal point write the characteristic
-              obtained in step 1. [1.6266]
-            </li>
-          </ol>
-          <p>Voila ! You have successfully used the log tables !</p>
+        <div class="pointer-container">
+          <a href="./identities.html"><i class="fa-solid fa-backward"></i></a>
+          <a href="./workarounds.html"><i class="fa-solid fa-forward"></i></a>
         </div>
-      </div>
-      <div class="pointer-container">
-        <a href="./identities.html"><i class="fa-solid fa-backward"></i></a>
-        <a href="./workarounds.html"><i class="fa-solid fa-forward"></i></a>
-      </div>
-    </main>
-  </div>
-  <script src="./app.js"></script>
-</body>
-
+      </main>
+    </div>
+    <script src="./app.js"></script>
+  </body>
 </html>
